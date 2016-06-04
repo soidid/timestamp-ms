@@ -1,0 +1,23 @@
+{
+  "name": "timestampms",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js",
+    "build" : "babel server.es6.js --out-file server.js",
+    "dev": "npm run build && npm start",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+   "devDependencies": {
+    "babel-cli": "^6.8.0",
+    "babel-plugin-transform-es2015-arrow-functions": "^6.8.0",
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.8.0",
+    "babel-plugin-transform-es2015-template-literals": "^6.8.0"
+  },
+  "dependencies": {
+    "express": "^4.13.4"
+  }
+}
