@@ -7,7 +7,7 @@ var _express2 = _interopRequireDefault(_express);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 let app = (0, _express2.default)();
-let port = process.env.port || 3000;
+let port = process.env.PORT || 3000;
 app.get('*', function (req, res) {
 	console.log(req.path);
 	let p = decodeURI(req.path.split('/')[1]);

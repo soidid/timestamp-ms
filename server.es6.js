@@ -1,7 +1,7 @@
 'use strict'
 import express from 'express'
 let app = express();
-let port = process.env.port || 3000;
+let port = process.env.PORT || 3000;
 app.get('*',(req,res)=>{
 	console.log(req.path)
 	let p = decodeURI(req.path.split('/')[1]);
